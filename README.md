@@ -5,7 +5,7 @@
 
 1. This snippet below is copied from a .htaccess file
     
-    - Awnser: Expand details:
+    - Answer: Expand details:
         ![Expand details][logo]
 
 
@@ -33,7 +33,7 @@
 
 2. Write a WordPress plugin called "I Love Coding" with these requirements
 
-    - Awnser: 
+    - Answer: 
         - Source https://github.com/alezzigo/test-mediacustom
         - Screenshot
         ![show1][show1]
@@ -45,6 +45,6 @@
 3. Build this simple form page using HTML & CSS with JS validation in which all
 fields are required. Please make it mobile responsive as well
 
-    - Awnser:
+    - Answer:
         - Demo https://alezzigo.github.io/
         - Source https://github.com/alezzigo/alezzigo.github.io
