@@ -14,9 +14,9 @@
     3. Flow 3
         ![flow 3][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: https://alezzigo.github.io/assets/images/expand-details.png "Expand details"
 
-2. Write a WordPress plugin called “I Love Coding” with these requirements
+2. Write a WordPress plugin called "I Love Coding" with these requirements
 - Awnser: 
     - Source https://github.com/alezzigo/test-mediacustom
 3. Build this simple form page using HTML & CSS with JS validation in which all
