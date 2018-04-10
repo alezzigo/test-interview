@@ -36,11 +36,11 @@
     - Awnser: 
         - Source https://github.com/alezzigo/test-mediacustom
         - Screenshot
-        ![show1 4][show1]
-        ![show2 4][show2]
+        ![show1][show1]
+        ![show2][show2]
 
-[show1]: https://alezzigo.github.io/assets/images/show1.png "show1 3"
-[show2]: https://alezzigo.github.io/assets/images/show2.png "show2 4"
+[show1]: https://alezzigo.github.io/assets/images/show1.png "show1"
+[show2]: https://alezzigo.github.io/assets/images/show2.png "show2"
 
 3. Build this simple form page using HTML & CSS with JS validation in which all
 fields are required. Please make it mobile responsive as well
