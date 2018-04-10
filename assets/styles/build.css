@@ -1,0 +1,283 @@
+html,
+body,
+img,
+div,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+html,
+body {
+  margin: 0;
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  height: 100%;
+}
+.b-white {
+  background-color: #ffffff !important;
+}
+.t-white {
+  color: #ffffff;
+}
+.t-grey {
+  color: #95989A !important;
+}
+.i-fit {
+  max-width: 100%;
+  max-height: 100%;
+}
+.t-justify {
+  text-align: justify;
+}
+.t-center {
+  text-align: center;
+}
+.btn {
+  border: none;
+  background-color: #ffffff;
+  padding: 5px 30px;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+ul {
+  list-style: none;
+}
+form {
+  max-width: 100%;
+}
+form input[type="radio"],
+form input[type="email"],
+form input[type="checkbox"],
+form input[type="text"] {
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  outline: 0;
+  padding: 11px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 10px;
+}
+form .g-input.inline input[type="radio"],
+form .g-input.inline input[type="email"],
+form .g-input.inline input[type="checkbox"],
+form .g-input.inline input[type="text"] {
+  width: auto;
+}
+.content {
+  margin: 0 auto;
+  max-width: 768px;
+  height: auto;
+  background-color: #796cde;
+  padding: 20px 30px;
+  position: relative;
+}
+.content .cta {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 40px;
+  height: 130px;
+  background-color: red;
+  box-shadow: -2px 0px 7px 1px #de7171;
+}
+.content .cta .cta-title {
+  color: #ffffff;
+  letter-spacing: 5px;
+  font-size: 1.3rem;
+  margin-top: 30px;
+}
+.head {
+  padding: 15px;
+  border: 1px solid #ffffff;
+}
+.head .title {
+  font-weight: 300;
+  font-size: 1.7rem;
+  padding-top: 20px;
+}
+.head .subtitle {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.head .para {
+  font-size: 0.9rem;
+}
+.head .clickme {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.head .clickme a {
+  color: #ffffff;
+}
+.head .product-image {
+  margin-top: 20px;
+  margin-left: -10px;
+}
+.body form {
+  padding: 15px;
+  background-color: #ffffff;
+  color: #95989A;
+}
+.body form .submit {
+  width: 100%;
+}
+.body form .t-question {
+  font-size: 0.8rem;
+}
+.body .item {
+  position: relative;
+  border-bottom: 1px solid #95989A;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.body .item .description {
+  margin-top: 10px;
+  display: none;
+}
+.body .item.open {
+  border-bottom: 1px solid transparent;
+  margin-bottom: 0px;
+}
+.body .item.open .description {
+  display: block;
+}
+.body .item.open .icon-expand {
+  transform: rotate(180deg);
+}
+.body .g-input input:nth-child(2) {
+  margin-left: 20px;
+}
+.body .btn-custom {
+  padding: 8px 45px;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: red;
+  color: #ffffff;
+}
+.body .p-right {
+  position: absolute;
+  right: 0px;
+}
+.body .icon-expand {
+  width: 20px;
+  height: 14px;
+  display: inline-block;
+  padding: 5px 1px;
+  background: center center url(/assets/images/icons/expand-button.svg);
+  background-size: 13px 13px, contain;
+  background-repeat: no-repeat;
+}
+.body .icon-expand:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.body .icon-title {
+  width: 34px;
+  height: 50px;
+  display: inline-block;
+  border-bottom: 3px solid #95989A;
+}
+.body .icon-title:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.body .icon-letter {
+  background: center center url(/assets/images/icons/message.svg);
+  background-size: 34px 34px, contain;
+  background-repeat: no-repeat;
+}
+.body .icon-contact {
+  background: center center url(/assets/images/icons/telephone.svg);
+  background-size: 34px 34px, contain;
+  background-repeat: no-repeat;
+}
+.body label {
+  font-size: 0.8rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+.md-4,
+.md-6 {
+  width: 100%;
+  min-width: 1%;
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (max-width: 340px) {
+  .md-4,
+  .md-6 {
+    width: 100%;
+  }
+}
+@media (min-width: 340px) and (max-width: 576px) {
+  .md-4,
+  .md-6 {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .md-4,
+  .md-6 {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .md-4 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .md-6 {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .md-4 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .md-6 {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .md-4 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .md-6 {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
