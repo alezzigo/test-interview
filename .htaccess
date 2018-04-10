@@ -1,0 +1,41 @@
+# BEGIN WordPress
+    ## Redirect url(domain at host) which have path 123/abc  -->  index.php?pre_dir_acc_61co625547=abc
+    RewriteRule 123/([a-zA-Z0-9-_]+)$ index.php?pre_dir_acc_61co625547=$1 [R=301,L]
+    
+    ## Check size of file request > 0 match RewriteRule
+    RewriteCond %{REQUEST_FILENAME} -s
+    
+    ## Check HTTP_USER_AGENT request run RewriteRule
+    RewriteCond %{HTTP_USER_AGENT} !facebookexternalhit/[0-9]
+    RewriteCond %{HTTP_USER_AGENT} !Twitterbot/[0-9]
+    RewriteCond %{HTTP_USER_AGENT} !Googlebot/[0-9]
+
+    ## If each RewriteCond match run RewriteRule then stop
+    ## Redirect url(domain at host) which have path p-content/uploads..  -->  index.php?pre_dir_acc_61co625547=$1&is_direct_access=true&file_type=$2
+
+    RewriteRule wp-content/uploads(\/[A-Za-z0-9_@.\/&+-]+)+\.([A-Za-z0-9_@.\/&+-]+)$
+    index.php?pre_dir_acc_61co625547=$1&is_direct_access=true&file_type=$2 [QSA,L]
+    
+    ## If have mod_rewrite module
+    <IfModule mod_rewrite.c>
+        ## on
+        RewriteEngine On
+
+        ## root
+        RewriteBase /
+        
+        ## run index.php then stop
+        RewriteRule ^index\.php$ - [L]
+
+        ## Check REQUEST_FILENAME request exist file or directory
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+
+        ## If each RewriteCond match run RewriteRule then stop
+        RewriteRule . /index.php [L]
+    </IfModule>
+    
+    ## Do not show index files;
+    Options -Indexes
+
+# END WordPress

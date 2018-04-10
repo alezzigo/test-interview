@@ -1,7 +1,7 @@
 ## Test by Ymese
 ### Dan Vu
 -----
-> This is my answer
+> This is my answer. Thank you!
 
 1. This snippet below is copied from a .htaccess file
     
